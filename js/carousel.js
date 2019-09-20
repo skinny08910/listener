@@ -1,0 +1,2 @@
+// Activate Carousel
+$("#myCarousel").carousel();
