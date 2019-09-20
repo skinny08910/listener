@@ -1,2 +1,2 @@
 # listener
-Listener is a static music site.
+BeatsOn is a static music site.
