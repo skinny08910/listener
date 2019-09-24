@@ -11,7 +11,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>BeatsOn | Listen to your favorite music</title>
+  <title>BeatsOn | Listen to your favorite song</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- jQuery CDN -->
 </head>
 
 <body>
@@ -27,7 +30,6 @@
       <!-- profile -->
       <div class="profile">
         <div class="profile__picture">
-          <img src="img/profile-picture.jpg" alt="Profile picture" class="profile-picture">
         </div>
         <div class="profile__group">
           <p class="profile__name">Eric Hoffman</p>
@@ -80,13 +82,12 @@
 
       <!-- top section -->
       <div class="top-section">
-
         <!-- top section search -->
         <div class="top-section-search">
           <div class="search-box">
             <label for="search-music" aria-label="search">
               <i class="fas fa-search"></i>
-              <input class="search" id="search-music" type="text" placeholder="Search movies, hit albums...">
+              <input class="search" id="search-music" type="text" placeholder="Search songs, hit albums...">
             </label>
           </div>
           <div class="sponser">
@@ -105,14 +106,13 @@
             </h1>
           </div>
           <div class="intro-slider">
-            <p><i class="far fa-circle icon"></i></p>
+            <p><i class="far fa-circle icon active"></i></p>
             <p><i class="fas fa-circle icon"></i></i></p>
             <p><i class="far fa-circle icon"></i></p>
             <p><i class="far fa-circle icon"></i></p>
           </div>
         </div>
         <!-- top section intro -->
-
       </div>
       <!-- top section -->
 
@@ -127,13 +127,13 @@
           </h1>
           <p>
             <span><i class="fas fa-caret-left"></i></span>
-            <span><i class="fas fa-caret-right"></i></span>
+            <span><i class="fas fa-caret-right active"></i></span>
           </p>
         </div>
         <!-- middle section title -->
 
         <!-- middle section feature -->
-        <div id="myCarousel" class="middle-section__featured" data-ride="carousel">
+        <div id="myCarousel" class="middle-section__featured carousel" data-ride="carousel">
           <div class="middle-section__featured-song item active">
             <img src="img/blue_moon.jpg" alt="Blue Moon" class="music-scale">
             <h3>
@@ -141,6 +141,7 @@
               <span class="artist-name">Justin Lik</span>
             </h3>
           </div>
+
           <div class="middle-section__featured-song item">
             <img src="img/discover.jpg" alt="Discover" class="music-scale">
             <h3>
@@ -148,6 +149,7 @@
               <span class="artist-name">Leanmon</span>
             </h3>
           </div>
+
           <div class="middle-section__featured-song item">
             <div class="music-scale">
               <img src="img/love_me_like_you_do.jpg" alt="Love me like you do" class="img-scale">
@@ -157,6 +159,7 @@
               <span class="artist-name">Eddie Goulding</span>
             </h3>
           </div>
+
           <div class="middle-section__featured-song item">
             <div class="music-scale">
               <img src="img/lovers.jpg" alt="Lovers" class="img-scale">
@@ -166,6 +169,7 @@
               <span class="artist-name">Jack Of The Arts </span>
             </h3>
           </div>
+
           <div class="middle-section__featured-song item">
             <div class="music-scale">
               <img src="img/discover_2.jpg" alt="Discover Second" class="music-scale">
@@ -175,6 +179,7 @@
               <span class="artist-name">Leanmon</span>
             </h3>
           </div>
+
           <div class="middle-section__featured-song item">
             <div class="music-scale">
               <img src="img/cold_water.jpg" alt="Cold Water" class="img-scale">
@@ -184,6 +189,7 @@
               <span class="artist-name">Cory Griffin / Bieber</span>
             </h3>
           </div>
+
           <div class="middle-section__featured-song item">
             <div class="music-scale">
               <img src="img/num.jpg" alt="Num" class="img-scale">
@@ -193,6 +199,7 @@
               <span class="artist-name">Linking Park</span>
             </h3>
           </div>
+
           <div class="middle-section__featured-song item">
             <div class="music-scale">
               <img src="img/num_2.jpg" alt="Num Second" class="img-scale">
@@ -277,5 +284,9 @@
 
 
 </body>
+
+<!-- JavaScript -->
+<script src="js/index.js"></script>
+<!-- JavaScript -->
 
 </html>
