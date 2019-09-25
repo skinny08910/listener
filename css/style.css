@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-.fas {
+.fas:not(.fa-search) {
   color: var(--text-color-light);
   margin-right: 1.3rem;
 }
@@ -138,6 +138,7 @@ li:hover, .music-table-li:not(:hover) {
 .profile__name {
   font-size: 1.1rem;
   color: var(--text-color-white);
+  margin: 0;
 }
 
 .profile__name:hover {
@@ -147,7 +148,7 @@ li:hover, .music-table-li:not(:hover) {
 .profile__premium {
   display: inline-block;
   padding: .2rem;
-  margin-top: .9rem;
+  margin: .6rem 0 0;
   color: var(--text-color-light);
   border: 2px solid var(--text-color-light);
   border-radius: .3rem;
@@ -188,10 +189,18 @@ li:hover, .music-table-li:not(:hover) {
   width: 40%;
 }
 
+.search-box label {
+  width: 100%;
+}
+
+.search-box .fa-search {
+  width: 10%;
+}
+
 .search {
   font-size: 1rem;
   color: var(--text-color-light);
-  width: 50%;
+  width: 89%;
   background-color: rgba(255, 255, 255, .0);
   border: none;
   outline: none;
@@ -279,6 +288,19 @@ li:hover, .music-table-li:not(:hover) {
 
 .middle-section__title p {
   margin-right: 4rem;
+  cursor: pointer;
+}
+
+.middle-section__title p span {
+  cursor: pointer;
+}
+
+.middle-section__title p span:first-child {
+  margin-right: .5rem;
+}
+
+.middle-section__title p span:last-child {
+  margin-left: .5rem;
 }
 
 .middle-section__featured {

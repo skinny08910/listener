@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>BeatsOn | Listen to your favorite song</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap -->
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <!-- jQuery CDN -->
@@ -117,109 +120,120 @@
       <!-- top section -->
 
       <!-- middle section -->
-      <div class="middle-section">
+      <!-- Carousel Container -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="middle-section">
+          <!-- middle section title -->
+          <div class="middle-section__title">
+            <h1>
+              <span class="little-title">Featured</span>
+              <span class="big-title">Cardio</span>
+            </h1>
+            <!-- Carousel Control -->
+            <p>
+              <span class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <i class="fas fa-caret-left"></i>
+              </span>
+              <span class="right carousel-control" href="#myCarousel" data-slide="next">
+                <i class="fas fa-caret-right active"></i>
+              </span>
+            </p>
+          </div>
+          <!-- middle section title -->
 
-        <!-- middle section title -->
-        <div class="middle-section__title">
-          <h1>
-            <span class="little-title">Featured</span>
-            <span class="big-title">Cardio</span>
-          </h1>
-          <p>
-            <span><i class="fas fa-caret-left"></i></span>
-            <span><i class="fas fa-caret-right active"></i></span>
-          </p>
+          <!-- middle section feature -->
+
+
+          <!-- Wrapper for slides -->
+          <div class="middle-section__featured carousel-inner">
+            <div class="middle-section__featured-song item active">
+              <img src="img/blue_moon.jpg" alt="Blue Moon" class="music-scale">
+              <h3>
+                <span class="music-name">Blue Moon</span>
+                <span class="artist-name">Justin Lik</span>
+              </h3>
+            </div>
+
+            <div class="middle-section__featured-song item">
+              <img src="img/discover.jpg" alt="Discover" class="music-scale">
+              <h3>
+                <span class="music-name">Discover</span>
+                <span class="artist-name">Leanmon</span>
+              </h3>
+            </div>
+
+            <div class="middle-section__featured-song item">
+              <div class="music-scale">
+                <img src="img/love_me_like_you_do.jpg" alt="Love me like you do" class="img-scale">
+              </div>
+              <h3>
+                <span class="music-name">Love Me Like You Do</span>
+                <span class="artist-name">Eddie Goulding</span>
+              </h3>
+            </div>
+
+            <div class="middle-section__featured-song item">
+              <div class="music-scale">
+                <img src="img/lovers.jpg" alt="Lovers" class="img-scale">
+              </div>
+              <h3>
+                <span class="music-name">Lovers</span>
+                <span class="artist-name">Jack Of The Arts </span>
+              </h3>
+            </div>
+
+            <div class="middle-section__featured-song item">
+              <div class="music-scale">
+                <img src="img/discover_2.jpg" alt="Discover Second" class="music-scale">
+              </div>
+              <h3>
+                <span class="music-name">Discover</span>
+                <span class="artist-name">Leanmon</span>
+              </h3>
+            </div>
+
+            <div class="middle-section__featured-song item">
+              <div class="music-scale">
+                <img src="img/cold_water.jpg" alt="Cold Water" class="img-scale">
+              </div>
+              <h3>
+                <span class="music-name">Cold Water</span>
+                <span class="artist-name">Cory Griffin / Bieber</span>
+              </h3>
+            </div>
+
+            <div class="middle-section__featured-song item">
+              <div class="music-scale">
+                <img src="img/num.jpg" alt="Num" class="img-scale">
+              </div>
+              <h3>
+                <span class="music-name">Num</span>
+                <span class="artist-name">Linking Park</span>
+              </h3>
+            </div>
+
+            <div class="middle-section__featured-song item">
+              <div class="music-scale">
+                <img src="img/num_2.jpg" alt="Num Second" class="img-scale">
+              </div>
+              <h3>
+                <span class="music-name">Num</span>
+                <span class="artist-name">Linking Park</span>
+              </h3>
+            </div>
+          </div>
+          <!-- Wrapper for slides -->
         </div>
-        <!-- middle section title -->
-
         <!-- middle section feature -->
-        <div id="myCarousel" class="middle-section__featured carousel" data-ride="carousel">
-          <div class="middle-section__featured-song item active">
-            <img src="img/blue_moon.jpg" alt="Blue Moon" class="music-scale">
-            <h3>
-              <span class="music-name">Blue Moon</span>
-              <span class="artist-name">Justin Lik</span>
-            </h3>
-          </div>
-
-          <div class="middle-section__featured-song item">
-            <img src="img/discover.jpg" alt="Discover" class="music-scale">
-            <h3>
-              <span class="music-name">Discover</span>
-              <span class="artist-name">Leanmon</span>
-            </h3>
-          </div>
-
-          <div class="middle-section__featured-song item">
-            <div class="music-scale">
-              <img src="img/love_me_like_you_do.jpg" alt="Love me like you do" class="img-scale">
-            </div>
-            <h3>
-              <span class="music-name">Love Me Like You Do</span>
-              <span class="artist-name">Eddie Goulding</span>
-            </h3>
-          </div>
-
-          <div class="middle-section__featured-song item">
-            <div class="music-scale">
-              <img src="img/lovers.jpg" alt="Lovers" class="img-scale">
-            </div>
-            <h3>
-              <span class="music-name">Lovers</span>
-              <span class="artist-name">Jack Of The Arts </span>
-            </h3>
-          </div>
-
-          <div class="middle-section__featured-song item">
-            <div class="music-scale">
-              <img src="img/discover_2.jpg" alt="Discover Second" class="music-scale">
-            </div>
-            <h3>
-              <span class="music-name">Discover</span>
-              <span class="artist-name">Leanmon</span>
-            </h3>
-          </div>
-
-          <div class="middle-section__featured-song item">
-            <div class="music-scale">
-              <img src="img/cold_water.jpg" alt="Cold Water" class="img-scale">
-            </div>
-            <h3>
-              <span class="music-name">Cold Water</span>
-              <span class="artist-name">Cory Griffin / Bieber</span>
-            </h3>
-          </div>
-
-          <div class="middle-section__featured-song item">
-            <div class="music-scale">
-              <img src="img/num.jpg" alt="Num" class="img-scale">
-            </div>
-            <h3>
-              <span class="music-name">Num</span>
-              <span class="artist-name">Linking Park</span>
-            </h3>
-          </div>
-
-          <div class="middle-section__featured-song item">
-            <div class="music-scale">
-              <img src="img/num_2.jpg" alt="Num Second" class="img-scale">
-            </div>
-            <h3>
-              <span class="music-name">Num</span>
-              <span class="artist-name">Linking Park</span>
-            </h3>
-          </div>
-        </div>
-        <!-- middle section feature -->
-
       </div>
+      <!-- Carousel Container -->
       <!-- middle section -->
 
       <!-- bottom section -->
       <div class="bottom-section">
 
         <!-- bottom section title -->
-        <div class="bottom-section__title">
+        <!-- <div class="bottom-section__title">
           <h1>
             <span class="little-title">Daily</span>
             <span class="big-title">Steel Pan</span>
@@ -228,11 +242,11 @@
             <span class="little-title">New</span>
             <span class="big-title">Meditation</span>
           </p>
-        </div>
+        </div> -->
         <!-- bottom section title -->
 
         <!-- bottom section hit song -->
-        <div class="bottom-section__hit-songs">
+        <!-- <div class="bottom-section__hit-songs">
           <div class="music-table">
             <ul>
               <li class="music-table-li mg-left">Sia&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cheap Thrills &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -268,7 +282,7 @@
               </h3>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- bottom section hit song -->
 
       </div>
@@ -286,7 +300,7 @@
 </body>
 
 <!-- JavaScript -->
-<script src="js/index.js"></script>
+<script src="js/carousel/index.js"></script>
 <!-- JavaScript -->
 
 </html>
