@@ -3,7 +3,7 @@
 
 /* Owl Carousel */
 .owl-carousel-wrapper {
-  width: 100vh;
+  height: 30vh;
 }
 
 /* Owl Carousel */
@@ -84,8 +84,26 @@ li:hover, .music-table-li:not(:hover) {
 }
 
 .music-table .music-table-li {
+  display: flex;
+  justify-content: space-between;
   border: none;
   cursor: auto;
+}
+
+.music-table .music-table-li .song-name-2 {
+  margin-left: -5px;
+}
+
+.music-table .music-table-li .song-name-3 {
+  margin-left: -20px;
+}
+
+.music-table .music-table-li .song-name-4 {
+  margin-left: -10px;
+}
+
+.music-table .music-table-li .artist-name-4 {
+  margin-left: 15px;
 }
 
 .music-table .mg-left {
@@ -200,7 +218,7 @@ li:hover, .music-table-li:not(:hover) {
 }
 
 .search-box .fa-search {
-  width: 10%;
+  width: 5%;
 }
 
 .search {
@@ -338,13 +356,6 @@ li:hover, .music-table-li:not(:hover) {
 }
 
 /* middle section */
-/* FEATURE SECTION ANIMATION */
-/* img:hover, .profile-picture:not(:hover) {
-  transition: .5s ease-in-out;
-  transform: scale(1.1);
-  cursor: pointer;
-} */
-/* FEATURE SECTION ANIMATION */
 /* bottom section */
 .bottom-section {
   display: block;
@@ -382,6 +393,7 @@ li:hover, .music-table-li:not(:hover) {
 .bottom-section__hit-songs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
 }
 
 .bottom-section p, .little-title {
@@ -409,9 +421,9 @@ li:hover, .music-table-li:not(:hover) {
 }
 
 .music-table ul .bg-black {
-  display: inline-block;
   background-color: var(--text-color-dark);
   padding: 0 1rem;
+  width: 102%;
 }
 
 .today-hit {
@@ -527,6 +539,10 @@ li:hover, .music-table-li:not(:hover) {
   }
 
   /*** Right side ***/
+  .wrapper .right-side {
+    height: 1800px;
+  }
+
   /* Top section search */
   .top-section {
     display: grid;
@@ -568,22 +584,93 @@ li:hover, .music-table-li:not(:hover) {
 
   /* Middle section */
   .middle-section {
-    margin: -200px 0 0;
+    margin: 100px 0 0;
   }
 
   .middle-section__title {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    width: 100vw;
+    margin-right: 0;
   }
 
-  .middle-section h1 {
+  .middle-section__title h1 {
     width: 50%;
     margin-left: 20px;
   }
 
-  .middle-section p {
+  .middle-section__title h1 .little-title {
+    font-size: 1rem;
+  }
+
+  .middle-section__title h1 .big-title {
+    font-size: 2rem;
+  }
+
+  .middle-section__title p {
     justify-self: end;
     margin-right: 20px;
   }
-}
+
+  .middle-section__featured {
+    width: 89vw;
+    margin: 0 20px;
+  }
+
+  .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 20px;
+  }
+
+  /* Bottom Section */
+  .bottom-section {
+    margin-left: 0;
+    margin-top: 300px;
+  }
+
+  .bottom-section__title h1 {
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+
+  .bottom-section__title h1 .little-title {
+    font-size: 1rem;
+  }
+
+  .bottom-section__title h1 .big-title {
+    font-size: 2rem;
+  }
+
+  .bottom-section__title p {
+    margin-right: 20px;
+  }
+
+  .bottom-section__title p .little-title {
+    font-size: 1rem;
+  }
+
+  .bottom-section__title p .big-title {
+    font-size: 2rem;
+  }
+
+  .bottom-section__hit-songs {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-section__hit-songs .music-table {
+    width: 100%;
+  }
+
+  .bottom-section__hit-songs .music-table ul {
+    width: 100%;
+    margin-left: 5px;
+  }
+
+  .bottom-section__hit-songs .today-hit {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 0 auto;
+    width: 95%;
+  }
