@@ -522,6 +522,60 @@ li:hover, .music-table-li:not(:hover) {
 
   /* Right side */
   .wrapper .right-side {}
+
+  /* Top Section Search */
+  .top-section {
+    display: grid;
+    margin: 0 2rem;
+  }
+
+  .top-section-search {
+    display: inline-block;
+    margin-top: 40px;
+  }
+
+  .top-section-search::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .top-section-search .search-box {
+    display: inline-block;
+    float: left;
+  }
+
+  .top-section-search .search-box .fa-search {
+    width: 10%;
+  }
+
+  .top-section-search .search-box .search {
+    width: 89%;
+  }
+
+  .top-section-search .sponser {
+    display: inline-block;
+    float: right;
+    margin-right: 0;
+  }
+
+  .top-section-intro {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .top-section-intro .intro-text {
+    width: 90%;
+    margin: 0 20px;
+  }
+
+  .top-section-intro .intro-text h1 span {
+    font-size: 2.5rem;
+  }
+
+  .top-section-intro .intro-slider {
+    display: none;
+  }
 }
 
 /********** Phone ***********/
@@ -565,7 +619,7 @@ li:hover, .music-table-li:not(:hover) {
   }
 
   .top-section-search .search-box .search {
-    width: 89%;
+    width: 86%;
   }
 
   .top-section-search .sponser {
@@ -692,12 +746,10 @@ li:hover, .music-table-li:not(:hover) {
   }
 
   .today-hit-boxes h3 .first-text {
-    padding-top: 2rem;
-    padding-left: 1.5rem;
+    font-size: 1rem;
   }
 
   .today-hit-boxes h3 .second-text {
-    padding-top: 1.1rem;
-    padding-left: 1.5rem;
+    font-size: 1rem;
   }
 }
