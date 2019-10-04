@@ -34,7 +34,7 @@
 
 .playlist .fa-plus-circle {
   color: var(--text-color-light);
-  margin-left: 5rem;
+  margin-left: 7rem;
 }
 
 .fa-circle {
@@ -177,8 +177,8 @@ li:hover, .music-table-li:not(:hover) {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 80px;
-  height: 80px;
+  width: 66px;
+  height: 66px;
   border-radius: 50%;
 }
 
@@ -567,6 +567,20 @@ li:hover, .music-table-li:not(:hover) {
   }
 
   /*** Right side ***/
+  /* profile */
+  .profile {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .profile__picture {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+  }
+
+  .profile__group {}
+
   /* Bottom Section */
   .bottom-section__hit-songs {
     display: grid;
@@ -584,25 +598,6 @@ li:hover, .music-table-li:not(:hover) {
 /********** Laptop Small ***********/
 @media only screen and (max-width: 1280px) {
 
-  /* profile */
-  .profile__picture {
-    width: 70px;
-    height: 70px;
-  }
-
-  .profile__name {
-    font-size: .9rem;
-  }
-
-  .profile__name:hover {
-    cursor: pointer;
-  }
-
-  .profile__premium {
-    font-size: .9rem;
-    justify-content: center;
-  }
-
   /*** Left side ***/
   .left-side .playlist .fa-plus-circle {
     margin-left: 20px;
@@ -610,6 +605,20 @@ li:hover, .music-table-li:not(:hover) {
   }
 
   /*** Right side ***/
+  /* profile */
+  .profile__picture {
+    width: 55px;
+    height: 55px;
+  }
+
+  .profile__name {
+    font-size: .8rem;
+  }
+
+  .profile__premium {
+    font-size: .8rem;
+  }
+
   /* Bottom Section */
   .bottom-section__hit-songs {
     display: grid;
@@ -1023,7 +1032,7 @@ li:hover, .music-table-li:not(:hover) {
 
   /*** Right side ***/
   .wrapper .right-side {
-    height: 1990px;
+    height: 2200px;
   }
 
   /* Top section search */
@@ -1076,7 +1085,7 @@ li:hover, .music-table-li:not(:hover) {
 
   /* Middle section */
   .middle-section {
-    margin: 100px 20px 0;
+    margin: 200px 20px 0;
     width: 90%;
   }
 
@@ -1122,7 +1131,7 @@ li:hover, .music-table-li:not(:hover) {
   /* Bottom Section */
   .bottom-section {
     margin-left: 0;
-    margin-top: 200px;
+    margin-top: 300px;
   }
 
   .bottom-section__title h1 {
