@@ -1,315 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="name" content="Nicksonder Examar" />
+    <meta name="description" content="A static music like website" />
+    <meta name="keywords" content="rap, band, classic, music" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="/css/carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/css/carousel/owl.theme.default.min.css" />
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>BeatsOn | Listen to your favorite song</title>
+    <!-- jQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery CDN -->
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="name" content="Nicksonder Examar" />
-  <meta name="description" content="A static music like website" />
-  <meta name="keywords" content="rap, band, classic, music" />
-  <!-- Owl Carousel -->
-  <link rel="stylesheet" href="/css/carousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="/css/carousel/owl.theme.default.min.css">
-  <!-- Owl Carousel -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>BeatsOn | Listen to your favorite song</title>
-  <!-- jQuery CDN -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <!-- jQuery CDN -->
-</head>
+  <body>
+    <!-- WRAPPER -->
 
-<body>
+    <div class="wrapper">
+      <!-- LEFT SIDE DIV -->
 
-  <!-- WRAPPER -->
-
-  <div class="wrapper">
-
-    <!-- LEFT SIDE DIV -->
-
-    <div class="left-side">
-
-      <!-- profile -->
-      <div class="profile">
-        <div class="profile__picture">
-        </div>
-        <div class="profile__group">
-          <p class="profile__name">Eric Hoffman</p>
-          <p class="profile__premium">Premium</p>
-        </div>
-      </div>
-      <!-- profile -->
-
-      <hr class="style-two">
-
-      <!-- left side ul -->
-      <ul>
-        <div class="section">
-          <ul>
-            <li><i class="fas fa-microphone"></i> Podcast</li>
-            <li><i class="fas fa-file-video"></i> Videos</li>
-            <li><i class="fas fa-map-marker"></i> Explore</li>
-            <li><i class="fas fa-broadcast-tower"></i> Radio</li>
-            <li><i class="fas fa-calendar-week"></i> Events</li>
-          </ul>
-        </div>
-        <hr class="style-two">
-        <div class="section">
-          <ul>
-            <li class="title-list">YOUR MUSIC</li>
-            <li><i class="fas fa-headphones"></i> Songs</li>
-            <li><i class="far fa-image"></i> Album</li>
-            <li><i class="far fa-user"></i> Artists</li>
-          </ul>
-        </div>
-        <hr class="style-two">
-        <div class="section">
-          <ul>
-            <li class="title-list playlist">YOUR PLAYLIST <i class="fas fa-plus-circle"></i></li>
-            <li><i class="far fa-circle"></i> Accoustic Chills</li>
-            <li><i class="far fa-circle"></i> New Vibes</li>
-            <li><i class="far fa-circle"></i> Favorites</li>
-          </ul>
-        </div>
-      </ul>
-      <!-- left side ul -->
-
-    </div>
-
-    <!-- LEFT SIDE DIV -->
-
-    <!-- RIGHT SIDE DIV -->
-
-    <div class="right-side">
-
-      <!-- top section -->
-      <div class="top-section">
-        <!-- top section search -->
-        <div class="top-section-search">
-          <div class="search-box">
-            <label for="search-music" aria-label="search">
-              <i class="fas fa-search"></i>
-              <input class="search" id="search-music" type="text" placeholder="Search songs, hit albums...">
-            </label>
+      <div class="left-side">
+        <!-- profile -->
+        <div class="profile">
+          <div class="profile__picture">
+            <picture>
+              <source srcset="img/profile-picture.webp" type="image/webp" />
+              <img
+                width="66"
+                height="66"
+                src="img/profile-picture.png"
+                alt="Profile picture"
+              />
+            </picture>
           </div>
-          <div class="sponser">
-            <p>MAKE A SPONSER</p>
+
+          <div class="profile__group">
+            <p class="profile__name">Eric Hoffman</p>
+            <p class="profile__premium">Premium</p>
           </div>
         </div>
-        <!-- top section search -->
+        <!-- profile -->
 
-        <!-- top section intro -->
-        <div class="top-section-intro">
-          <div class="intro-text">
-            <h1>
-              <span>The Chainsmokers</span>
-              <span> & Coldplay - Something</span>
-              <span>Just Like This</span>
-            </h1>
-          </div>
-          <div class="intro-slider">
-            <p><i class="far fa-circle slider-icon"></i></p>
-            <p><i class="far fa-circle slider-icon"></i></p>
-            <p><i class="far fa-circle slider-icon"></i></p>
-            <p><i class="far fa-circle slider-icon"></i></p>
-          </div>
-        </div>
-        <!-- top section intro -->
-      </div>
-      <!-- top section -->
+        <hr class="style-two" />
 
-      <!-- middle section and owl carousel wrapper -->
-      <div class="middle-section owl-carousel-wrapper">
-        <!-- middle section title -->
-        <div class="middle-section__title">
-          <h1>
-            <span class="little-title">Featured</span>
-            <span class="big-title">Cardio</span>
-          </h1>
-          <p>
-            <span>
-              <i class="fas fa-caret-left"></i>
-            </span>
-            <span>
-              <i class="fas fa-caret-right active"></i>
-            </span>
-          </p>
-        </div>
-        <!-- middle section title -->
-
-        <!-- middle section feature -->
-        <!-- Wrapper for items and Init Owl Carousel -->
-        <div class="middle-section__featured owl-carousel owl-theme">
-          <div class=" middle-section__featured-song item">
-            <div class="middle-section__img img-1">
-            </div>
-            <h3>
-              <span class="music-name">Blue Moon</span>
-              <span class="artist-name">Justin Lik</span>
-            </h3>
-          </div>
-
-          <div class="middle-section__featured-song item">
-            <div class="middle-section__img img-2">
-            </div>
-            <h3>
-              <span class="music-name">Discover</span>
-              <span class="artist-name">Leanmon</span>
-            </h3>
-          </div>
-
-          <div class="middle-section__featured-song item">
-            <div class="middle-section__img img-3">
-            </div>
-            <h3>
-              <span class="music-name">Love Me Like You Do</span>
-              <span class="artist-name">Eddie Goulding</span>
-            </h3>
-          </div>
-
-          <div class="middle-section__featured-song item">
-            <div class="middle-section__img img-4">
-            </div>
-            <h3>
-              <span class="music-name">Lovers</span>
-              <span class="artist-name">Jack Of The Arts </span>
-            </h3>
-          </div>
-
-          <div class="middle-section__featured-song item">
-            <div class="middle-section__img img-5">
-            </div>
-            <h3>
-              <span class="music-name">Discover</span>
-              <span class="artist-name">Leanmon</span>
-            </h3>
-          </div>
-
-          <div class="middle-section__featured-song item">
-            <div class="middle-section__img img-6">
-            </div>
-            <h3>
-              <span class="music-name">Cold Water</span>
-              <span class="artist-name">Cory Griffin / Bieber</span>
-            </h3>
-          </div>
-
-          <div class="middle-section__featured-song item">
-            <div class="middle-section__img img-7">
-            </div>
-            <h3>
-              <span class="music-name">Num</span>
-              <span class="artist-name">Linking Park</span>
-            </h3>
-          </div>
-
-          <div class="middle-section__featured-song item">
-            <div class="middle-section__img img-8">
-            </div>
-            <h3>
-              <span class="music-name">Num</span>
-              <span class="artist-name">Linking Park</span>
-            </h3>
-          </div>
-        </div>
-        <!-- Wrapper for items and Init Owl Carousel -->
-        <!-- middle section feature -->
-      </div>
-      <!-- middle section and owl carousel wrapper -->
-
-      <!-- bottom section -->
-      <div class="bottom-section">
-
-        <!-- bottom section title -->
-        <div class="bottom-section__title">
-          <h1>
-            <span class="little-title">Daily</span>
-            <span class="big-title">Steel Pan</span>
-          </h1>
-          <p>
-            <span class="little-title">New</span>
-            <span class="big-title">Meditation</span>
-          </p>
-        </div>
-        <!-- bottom section title -->
-
-        <!-- bottom section hit song -->
-        <div class="bottom-section__hit-songs">
-          <div class="music-table">
+        <!-- left side ul -->
+        <ul>
+          <div class="section section-one">
             <ul>
-              <li class="music-table-li mg-left">
-                <div class="item first-item">Sia Cheap</div>
-                <div class="item song-name-1">Thrills</div>
-                <div class="item artist-name-1">Sean Paul</div>
-                <div class="item time-1"> 5:50</div>
+              <li><i class="fas fa-microphone"></i> Podcast</li>
+              <li><i class="fas fa-file-video"></i> Videos</li>
+              <li><i class="fas fa-map-marker"></i> Explore</li>
+              <li><i class="fas fa-broadcast-tower"></i> Radio</li>
+              <li><i class="fas fa-calendar-week"></i> Events</li>
+            </ul>
+          </div>
+
+          <hr class="style-two" />
+
+          <div class="section section-two">
+            <ul>
+              <li class="title-list">YOUR MUSIC</li>
+              <li><i class="fas fa-headphones"></i> Songs</li>
+              <li><i class="far fa-image"></i> Album</li>
+              <li><i class="far fa-user"></i> Artists</li>
+            </ul>
+          </div>
+
+          <hr class="style-two" />
+
+          <div class="section section-three">
+            <ul>
+              <li class="title-list playlist">
+                <div>YOUR PLAYLIST</div>
+                <i class="fas fa-plus-circle"></i>
               </li>
-              <li class="music-table-li bg-black">
-                <div class="item second-item">Alan Walker</div>
-                <div class="item song-name-2">Faded</div>
-                <div class="item artist-name-2">Iselin Solheim</div>
-                <div class="item time-2">3:32</div>
+              <li>
+                <i class="far fa-circle"></i>
+                <div>Accoustic Chills</div>
               </li>
-              <li class="music-table-li mg-left">
-                <div class="item third-item">Ed Sheeron</div>
-                <div class="item song-name-3">Perfect</div>
-                <div class="item artist-name-3">Lovers</div>
-                <div class="item time-3">4:39</div>
+              <li>
+                <i class="far fa-circle"></i>
+                <div>New Vibes</div>
               </li>
-              <li class="music-table-li bg-black">
-                <div class="item fourth-item">Num Linkin</div>
-                <div class="item song-name-4">Park</div>
-                <div class="item artist-name-4">Meteora</div>
-                <div class="item time-4">3:06</div>
+              <li>
+                <i class="far fa-circle"></i>
+                <div>Favorites</div>
               </li>
             </ul>
           </div>
-          <div class="today-hit">
-            <div class="today-hit-boxes box-1">
-              <h3>
-                <span class="first-text">TODAY'S</span>
-                <span class="second-text">HIT</span>
-                <span class="time">at 9:00pm</span>
-              </h3>
-            </div>
-            <div class="today-hit-boxes box-2">
-              <h3>
-                <span class="first-text">TODAY'S</span>
-                <span class="second-text">HIT</span>
-                <span class="time">at 9:00pm</span>
-              </h3>
-            </div>
-            <div class="today-hit-boxes box-3">
-              <h3>
-                <span class="first-text">TODAY'S</span>
-                <span class="second-text">HIT</span>
-                <span class="time">at 9:00pm</span>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <!-- bottom section hit song -->
-
+        </ul>
+        <!-- left side ul -->
       </div>
-      <!-- bottom section -->
 
+      <!-- LEFT SIDE DIV -->
+
+      <!-- RIGHT SIDE DIV -->
+
+      <div class="right-side">
+        <!-- Container -->
+        <div class="container">
+          <!-- top section -->
+          <div class="top-section">
+            <!-- top section search -->
+            <div class="top-section-search">
+              <div class="search-box">
+                <label for="search-music" aria-label="search">
+                  <i class="fas fa-search"></i>
+                  <input
+                    class="search"
+                    id="search-music"
+                    type="text"
+                    placeholder="Search songs, hit albums..."
+                  />
+                </label>
+              </div>
+              <div class="sponser">
+                <p>MAKE A SPONSER</p>
+              </div>
+            </div>
+            <!-- top section search -->
+
+            <!-- top section intro -->
+            <div class="top-section-intro">
+              <div class="intro-text">
+                <h1>
+                  <span>The Chainsmokers</span>
+                  <span> & Coldplay - Something</span>
+                  <span>Just Like This</span>
+                </h1>
+              </div>
+              <div class="intro-slider">
+                <p><i class="far fa-circle slider-icon"></i></p>
+                <p><i class="far fa-circle slider-icon"></i></p>
+                <p><i class="far fa-circle slider-icon"></i></p>
+                <p><i class="far fa-circle slider-icon"></i></p>
+              </div>
+            </div>
+            <!-- top section intro -->
+          </div>
+          <!-- top section -->
+
+          <!-- middle section and owl carousel wrapper -->
+          <div class="middle-section owl-carousel-wrapper">
+            <!-- middle section title -->
+            <div class="middle-section__title">
+              <h1>
+                <span class="little-title">Featured</span>
+                <span class="big-title">Cardio</span>
+              </h1>
+            </div>
+            <!-- middle section title -->
+
+            <!-- middle section feature -->
+            <!-- Wrapper for items and Init Owl Carousel -->
+            <div class="middle-section__featured owl-carousel owl-theme">
+              <!-- Item 1 -->
+              <div class="middle-section__featured-song item">
+                <div class="middle-section__img">
+                  <picture>
+                    <source srcset="img/blue_moon.webp" type="image/webp" />
+                    <img
+                      src="img/blue_moon.png"
+                      width="185"
+                      height="150"
+                      alt="Blue Moon"
+                    />
+                  </picture>
+                </div>
+                <h3>
+                  <span class="music-name">Blue Moon</span>
+                  <span class="artist-name">Justin Lik</span>
+                </h3>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="middle-section__featured-song item">
+                <div class="middle-section__img">
+                  <picture>
+                    <source srcset="img/discover.webp" type="image/webp" />
+                    <img
+                      src="img/discover.png"
+                      width="185"
+                      height="150"
+                      alt="Discover"
+                    />
+                  </picture>
+                </div>
+                <h3>
+                  <span class="music-name">Discover</span>
+                  <span class="artist-name">Leanmon</span>
+                </h3>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="middle-section__featured-song item">
+                <div class="middle-section__img">
+                  <picture>
+                    <source
+                      srcset="img/love_me_like_you_do.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="img/love_me_like_you_do.png"
+                      width="185"
+                      height="150"
+                      alt="Love me like you do"
+                    />
+                  </picture>
+                </div>
+                <h3>
+                  <span class="music-name">Love Me Like You Do</span>
+                  <span class="artist-name">Eddie Goulding</span>
+                </h3>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="middle-section__featured-song item">
+                <div class="middle-section__img">
+                  <picture>
+                    <source srcset="img/lovers.webp" type="image/webp" />
+                    <img
+                      src="img/lovers.png"
+                      width="185"
+                      height="150"
+                      alt="Lovers"
+                    />
+                  </picture>
+                </div>
+                <h3>
+                  <span class="music-name">Lovers</span>
+                  <span class="artist-name">Jack Of The Arts </span>
+                </h3>
+              </div>
+
+              <!-- Item 5 -->
+              <div class="middle-section__featured-song item">
+                <div class="middle-section__img">
+                  <picture>
+                    <source srcset="img/discover_2.webp" type="image/webp" />
+                    <img
+                      src="img/discover_2.png"
+                      width="185"
+                      height="150"
+                      alt="Discover 2"
+                    />
+                  </picture>
+                </div>
+                <h3>
+                  <span class="music-name">Discover</span>
+                  <span class="artist-name">Leanmon</span>
+                </h3>
+              </div>
+
+              <!-- Item 6 -->
+              <div class="middle-section__featured-song item">
+                <div class="middle-section__img">
+                  <picture>
+                    <source srcset="img/cold_water.webp" type="image/webp" />
+                    <img
+                      src="img/cold_water.png"
+                      width="185"
+                      height="150"
+                      alt="Cold Water"
+                    />
+                  </picture>
+                </div>
+                <h3>
+                  <span class="music-name">Cold Water</span>
+                  <span class="artist-name">Cory Griffin / Bieber</span>
+                </h3>
+              </div>
+
+              <!-- Item 7 -->
+              <div class="middle-section__featured-song item">
+                <div class="middle-section__img">
+                  <picture>
+                    <source srcset="img/num.webp" type="image/webp" />
+                    <img src="img/num.png" width="185" height="150" alt="Num" />
+                  </picture>
+                </div>
+                <h3>
+                  <span class="music-name">Num</span>
+                  <span class="artist-name">Linking Park</span>
+                </h3>
+              </div>
+
+              <!-- Item 8 -->
+              <div class="middle-section__featured-song item">
+                <div class="middle-section__img img-8">
+                  <picture>
+                    <source srcset="img/num_2.webp" type="image/webp" />
+                    <img
+                      src="img/num_2.png"
+                      width="185"
+                      height="150"
+                      alt="Num"
+                    />
+                  </picture>
+                </div>
+                <h3>
+                  <span class="music-name">Num</span>
+                  <span class="artist-name">Linking Park</span>
+                </h3>
+              </div>
+            </div>
+            <!-- Wrapper for items and Init Owl Carousel -->
+            <!-- middle section feature -->
+          </div>
+          <!-- middle section and owl carousel wrapper -->
+
+          <!-- bottom section -->
+          <div class="bottom-section">
+            <!-- bottom section title -->
+            <div class="bottom-section__title">
+              <h1>
+                <span class="little-title">Daily</span>
+                <span class="big-title">Steel Pan</span>
+              </h1>
+              <p>
+                <span class="little-title">New</span>
+                <span class="big-title">Meditation</span>
+              </p>
+            </div>
+            <!-- bottom section title -->
+
+            <!-- bottom section hit song -->
+            <div class="bottom-section__hit-songs">
+              <div class="music-table">
+                <ul>
+                  <li class="music-table-li mg-left">
+                    <div class="item first-item">Sia Cheap</div>
+                    <div class="item song-name-1">Thrills</div>
+                    <div class="item artist-name-1">Sean Paul</div>
+                    <div class="item time-1">5:50</div>
+                  </li>
+                  <li class="music-table-li bg-black">
+                    <div class="item second-item">Alan Walker</div>
+                    <div class="item song-name-2">Faded</div>
+                    <div class="item artist-name-2">Iselin Solheim</div>
+                    <div class="item time-2">3:32</div>
+                  </li>
+                  <li class="music-table-li mg-left">
+                    <div class="item third-item">Ed Sheeron</div>
+                    <div class="item song-name-3">Perfect</div>
+                    <div class="item artist-name-3">Lovers</div>
+                    <div class="item time-3">4:39</div>
+                  </li>
+                  <li class="music-table-li bg-black">
+                    <div class="item fourth-item">Num Linkin</div>
+                    <div class="item song-name-4">Park</div>
+                    <div class="item artist-name-4">Meteora</div>
+                    <div class="item time-4">3:06</div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="today-hit">
+                <!-- Box 1 -->
+                <div class="today-hit-boxes">
+                  <picture>
+                    <source srcset="img/today_hit_1.webp" type="image/webp" />
+                    <img
+                      src="img/today_hit_1.png"
+                      width="150"
+                      height="190"
+                      alt="Today Hit 1"
+                    />
+                  </picture>
+
+                  <div>
+                    <span class="first-text">TODAY'S</span>
+                    <span class="second-text">HIT</span>
+                    <span class="time">at 9:00pm</span>
+                  </div>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="today-hit-boxes">
+                  <picture>
+                    <source srcset="img/today_hit_2.webp" type="image/webp" />
+                    <img
+                      src="img/today_hit_2.png"
+                      width="150"
+                      height="190"
+                      alt="Today Hit 2"
+                    />
+                  </picture>
+
+                  <div>
+                    <span class="first-text">TODAY'S</span>
+                    <span class="second-text">HIT</span>
+                    <span class="time">at 9:00pm</span>
+                  </div>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="today-hit-boxes">
+                  <picture>
+                    <source srcset="img/today_hit_3.webp" type="image/webp" />
+                    <img
+                      src="img/today_hit_3.png"
+                      width="150"
+                      height="190"
+                      alt="Today Hit 3"
+                    />
+                  </picture>
+
+                  <div>
+                    <span class="first-text">TODAY'S</span>
+                    <span class="second-text">HIT</span>
+                    <span class="time">at 9:00pm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- bottom section hit song -->
+          </div>
+          <!-- bottom section -->
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE DIV -->
     </div>
 
-    <!-- RIGHT SIDE DIV -->
+    <!-- WRAPPER -->
+  </body>
 
-  </div>
-
-  <!-- WRAPPER -->
-
-
-</body>
-
-<!-- JavaScript -->
-<!-- Owl Carousel -->
-<script src="js/carousel/owl.carousel.min.js"></script>
-<script src="js/carousel/index.js"></script>
-<!-- Owl Carousel -->
-<!-- JavaScript -->
-
+  <!-- JavaScript -->
+  <!-- Owl Carousel -->
+  <script src="js/carousel/owl.carousel.min.js"></script>
+  <script src="js/carousel/index.js"></script>
+  <!-- Owl Carousel -->
+  <!-- JavaScript -->
 </html>
